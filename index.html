@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>For Tia</title>
+<title>test</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;1,9..144,500&family=Caveat:wght@600&display=swap" rel="stylesheet">
@@ -72,11 +72,11 @@ input[type=range]:focus-visible{outline:2px solid var(--lilac);outline-offset:6p
     <p id="pct">0%</p>
     <p id="cap">Slide it and see…</p>
   </div>
-  <img class="photo photo-bottom" src="us.jpeg" alt="Us" onerror="this.remove()">
+  <img class="photo photo-bottom" src="no.jpeg" alt="Us" onerror="this.remove()">
 </main>
 
 <main id="s2" class="screen" hidden>
-  <img class="photo photo-card" src="us.jpeg" alt="Us" onerror="this.remove()">
+  <img class="photo photo-card" src="no.jpeg" alt="Us" onerror="this.remove()">
   <article class="card">
     <h2 id="to"></h2>
     <div id="note"></div>
@@ -93,7 +93,7 @@ const HER_NAME  = "null";
 const FROM_NAME = "null";
 const NOTE = [
   "null",
-  "Because Dahlias arent in "
+  ""
 ];
 /* ====================== */
 
@@ -186,7 +186,7 @@ function explode(){
   setTimeout(()=>{s1.hidden=true;s2.hidden=false;showNote()},1600);
 }
 function showNote(){
-  $('to').textContent='Hey, '+HER_NAME;
+  $('to').textContent=', '+HER_NAME;
   $('from').textContent='— '+FROM_NAME;
   NOTE.forEach(t=>{const p=document.createElement('p');p.textContent=t;$('note').append(p)});
 }
